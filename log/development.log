@@ -604,3 +604,1474 @@ ActionController::UnknownAction (No action responded to 1. Actions: create, dest
   /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 15:47:55) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 15:48:27) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 15:48:29) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 15:48:38) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+
+ActionView::TemplateError (undefined method `nil_class_path' for #<ActionView::Base:0x1042f82a8>) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', [:controller => :stories, :action => :show] %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:8
+    app/views/start/index.html.erb:6:in `each'
+    app/views/start/index.html.erb:6
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 15:49:15) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 15:51:01) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 15:55:55) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 15:56:23) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 15:56:26) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 15:59:00) [GET]
+  [4;36;1mStory Load (0.5ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+
+ActionView::TemplateError (undefined method `story_path' for #<ActionView::Base:0x1042cede0>) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', story_path(story) %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:8
+    app/views/start/index.html.erb:6:in `each'
+    app/views/start/index.html.erb:6
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 15:59:27) [GET]
+  [4;35;1mStory Load (0.3ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+
+ActionView::TemplateError (undefined method `story_path' for #<ActionView::Base:0x103f65f00>) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', story_path(story) %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:8
+    app/views/start/index.html.erb:6:in `each'
+    app/views/start/index.html.erb:6
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 15:59:36) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#show to #<story:0x1040234d8> (for 127.0.0.1 at 2011-10-03 15:59:40) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Story without an ID):
+  app/controllers/stories_controller.rb:27:in `show'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (87.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 15:59:54) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 15:59:56) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+
+ActionView::MissingTemplate (Missing template stories/index.erb in view path app/views):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:00:06) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+
+ActionView::TemplateError (undefined local variable or method `story_path' for #<ActionView::Base:0x1040ef1c8>) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', story_path %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:8
+    app/views/start/index.html.erb:6:in `each'
+    app/views/start/index.html.erb:6
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (91.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:00:15) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 38ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:00:28) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:00:57) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:06:53) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 24ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#show to #<story:0x10406ec08> (for 127.0.0.1 at 2011-10-03 16:06:58) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Story without an ID):
+  app/controllers/stories_controller.rb:27:in `show'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#show to #<story:0x10406ec08> (for 127.0.0.1 at 2011-10-03 16:07:04) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Story without an ID):
+  app/controllers/stories_controller.rb:27:in `show'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:07:09) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 39ms (View: 35, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:07:26) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#show to #<story:0x104268798> (for 127.0.0.1 at 2011-10-03 16:07:29) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Story without an ID):
+  app/controllers/stories_controller.rb:27:in `show'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:07:35) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:07:54) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:08:00) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:15:06) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:15:14) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+
+ActionView::TemplateError (undefined method `stories_path' for #<ActionView::Base:0x1042d25f8>) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', stories_path(story) %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:8
+    app/views/start/index.html.erb:6:in `each'
+    app/views/start/index.html.erb:6
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:15:23) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:20:30) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+
+ActionView::MissingTemplate (Missing template stories/index.erb in view path app/views):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:22:12) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:22:59) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (story_url failed to generate from {:action=>"show", :controller=>"stories"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["stories", :id] - are they all satisfied?) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Show', :story%>
+7:   </p>
+8: <% end %>
+
+    (eval):17:in `story_path'
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:23:11) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (story_url failed to generate from {:action=>"show", :controller=>"stories"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["stories", :id] - are they all satisfied?) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Show', :story %>
+7:   </p>
+8: <% end %>
+
+    (eval):17:in `story_path'
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:23:15) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:23:16) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:23:18) [GET]
+  [4;35;1mStory Load (0.3ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:23:26) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined method `stringify_keys' for :id:Symbol) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Show', :stories, :id %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:23:45) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined local variable or method `story_id' for #<ActionView::Base:0x104264058>) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Show', :stories, story_id %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:23:50) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined method `stringify_keys' for 1:Fixnum) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Show', :stories, story.id %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:26:07) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (story_url failed to generate from {:action=>"show", :controller=>"stories"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["stories", :id] - are they all satisfied?) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Show', story_path %>
+7:   </p>
+8: <% end %>
+
+    (eval):17:in `story_path'
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:26:36) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (ending_url failed to generate from {:action=>"show", :controller=>"endings"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["endings", :id] - are they all satisfied?) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Show', ending_path %>
+7:   </p>
+8: <% end %>
+
+    (eval):17:in `ending_path'
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:26:52) [GET]
+  [4;35;1mStory Load (0.5ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/stories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-10-03 16:26:55) [GET]
+
+SyntaxError (/Users/Akil/Documents/CYOA/app/controllers/endings_controller.rb:26: syntax error, unexpected $end, expecting kEND):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:27:36) [GET]
+  [4;36;1mStory Load (0.5ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/stories]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:27:39) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:37:47) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 16:37:51) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 16:38:22) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 16:38:24) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:38:27) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+ERROR: compiling _run_erb_app47views47start47index46html46erb RAISED compile error
+/Users/Akil/Documents/CYOA/app/views/start/index.html.erb:8: syntax error, unexpected ')', expecting tASSOC
+...t', :action => 'show', story ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47start47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>Choose Your Own Adventure</title>\n<h1>Start your adventure!</h1>\n<p>Do so by clicking on one of the Stories listed below.</p>\n<br />\n\n"
+
+
+
+
+;  for story in @stories ; @output_buffer.concat "\n  <p>"
+; @output_buffer.concat((h story.title ).to_s); @output_buffer.concat " <br />\n   "
+; @output_buffer.concat(( link_to 'Start', :action => 'show', story ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Akil/Documents/CYOA/app/views/start/index.html.erb:13:in `compile!'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/commands/server.rb:111
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `gem_original_require'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Akil/Documents/CYOA/app/views/start/index.html.erb:8: syntax error, unexpected ')', expecting tASSOC
+...t', :action => 'show', story ).to_s); @output_buffer.concat ...
+                              ^) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', :action => 'show', story %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:13:in `compile!'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:38:42) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+ERROR: compiling _run_erb_app47views47start47index46html46erb RAISED compile error
+/Users/Akil/Documents/CYOA/app/views/start/index.html.erb:8: syntax error, unexpected ']', expecting tASSOC
+...t', [:action => 'show', story] ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47start47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>Choose Your Own Adventure</title>\n<h1>Start your adventure!</h1>\n<p>Do so by clicking on one of the Stories listed below.</p>\n<br />\n\n"
+
+
+
+
+;  for story in @stories ; @output_buffer.concat "\n  <p>"
+; @output_buffer.concat((h story.title ).to_s); @output_buffer.concat " <br />\n   "
+; @output_buffer.concat(( link_to 'Start', [:action => 'show', story] ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Akil/Documents/CYOA/app/views/start/index.html.erb:13:in `compile!'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/commands/server.rb:111
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `gem_original_require'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Akil/Documents/CYOA/app/views/start/index.html.erb:8: syntax error, unexpected ']', expecting tASSOC
+...t', [:action => 'show', story] ).to_s); @output_buffer.conca...
+                              ^) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', [:action => 'show', story] %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:13:in `compile!'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:38:43) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+ERROR: compiling _run_erb_app47views47start47index46html46erb RAISED compile error
+/Users/Akil/Documents/CYOA/app/views/start/index.html.erb:8: syntax error, unexpected ']', expecting tASSOC
+...t', [:action => 'show', story] ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47start47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>Choose Your Own Adventure</title>\n<h1>Start your adventure!</h1>\n<p>Do so by clicking on one of the Stories listed below.</p>\n<br />\n\n"
+
+
+
+
+;  for story in @stories ; @output_buffer.concat "\n  <p>"
+; @output_buffer.concat((h story.title ).to_s); @output_buffer.concat " <br />\n   "
+; @output_buffer.concat(( link_to 'Start', [:action => 'show', story] ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Akil/Documents/CYOA/app/views/start/index.html.erb:13:in `compile!'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1328:in `default_render'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/Akil/.rvm/gems/ruby-1.8.7-p352@CYOA/gems/rails-2.3.10/lib/commands/server.rb:111
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `gem_original_require'
+/Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Akil/Documents/CYOA/app/views/start/index.html.erb:8: syntax error, unexpected ']', expecting tASSOC
+...t', [:action => 'show', story] ).to_s); @output_buffer.conca...
+                              ^) on line #8 of app/views/start/index.html.erb:
+5: 
+6: <% for story in @stories %>
+7:   <p><%=h story.title %> <br />
+8:    <%= link_to 'Start', [:action => 'show', story] %>
+9:   </p>
+10: <% end %>
+
+    app/views/start/index.html.erb:13:in `compile!'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:39:02) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 16:39:05) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:47:32) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2011-10-03 16:47:35) [GET]
+  Parameters: {"id"=>"1"}
+
+NameError (uninitialized constant StoryController):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.2ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:48:58) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 16:49:01) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:56:06) [GET]
+  [4;36;1mStory Load (0.5ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:56:14) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StoriesController#2 (for 127.0.0.1 at 2011-10-03 16:56:16) [GET]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 16:56:20) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#1 (for 127.0.0.1 at 2011-10-03 16:57:23) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, index, new, and show):
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:57:27) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined method `show_path' for #<ActionView::Base:0x103fb91c8>) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Start', :show, story %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:57:47) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined method `show_story_path' for #<ActionView::Base:0x104000d20>) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Start', [:show, story] %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:57:58) [GET]
+  [4;36;1mStory Load (0.5ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined local variable or method `stories' for #<ActionView::Base:0x104109190>) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for story in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Start', [:show, stories] %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:58:07) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined local variable or method `story' for #<ActionView::Base:0x104200648>) on line #5 of app/views/stories/index.html.erb:
+2: <h1>All the Stories</h1>
+3: 
+4: <% for stories in @stories %>
+5:   <p><%= story.title%><br />
+6:     <%= link_to 'Start', [:show, stories] %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:5
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:58:15) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering stories/index
+
+ActionView::TemplateError (undefined method `show_story_path' for #<ActionView::Base:0x103f2fb80>) on line #6 of app/views/stories/index.html.erb:
+3: 
+4: <% for stories in @stories %>
+5:   <p><%= stories.title%><br />
+6:     <%= link_to 'Start', [:show, stories] %>
+7:   </p>
+8: <% end %>
+
+    app/views/stories/index.html.erb:6
+    app/views/stories/index.html.erb:4:in `each'
+    app/views/stories/index.html.erb:4
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/Akil/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StoriesController#index (for 127.0.0.1 at 2011-10-03 16:59:09) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering stories/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/stories]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:59:14) [GET]
+  [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]

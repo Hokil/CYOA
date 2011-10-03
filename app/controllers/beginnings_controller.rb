@@ -12,6 +12,9 @@ class BeginningsController < ApplicationController
     
     if @beginning.save
       redirect_to [:stories]
+    else
+      render :action => 'new'
+    end
   end
   
   def destroy

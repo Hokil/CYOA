@@ -12,6 +12,9 @@ class PlotPointssController < ApplicationController
     
     if @plpo.save
       redirect_to [:stories]
+    else
+      render :action => 'new'
+    end
   end
   
   def destroy

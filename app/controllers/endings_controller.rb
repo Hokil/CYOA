@@ -12,6 +12,9 @@ class EndingsController < ApplicationController
     
     if @ending.save
       redirect_to [:stories]
+    else
+      render :action => 'new'
+    end
   end
   
   def destroy

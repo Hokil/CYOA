@@ -12,6 +12,9 @@ class ChoicesController < ApplicationController
     
     if @choice.save
       redirect_to [:stories]
+    else
+      render :action => 'new'
+    end      
   end
   
   def destroy
