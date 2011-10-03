@@ -40,4 +40,11 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  
+  map.root :controller => 'start'
+  map.resources :stories
+  map.resources :beginnings
+  map.resources :plot_points
+  map.resources :endings
+  map.resources :choices
 end

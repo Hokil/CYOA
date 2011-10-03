@@ -1,0 +1,9 @@
+<h1>Start your adventure!</h1>
+<p>Do so by clicking on one of the Stories listed below.</p>
+<br />
+
+<% for story in @stories %>
+  <p><%=h story.title %> <br />
+   <%= link_to 'Start', [:controller => :stories, :action => :show] %>
+  </p>
+<% end %>
