@@ -2075,3 +2075,9 @@ Processing StartController#index (for 127.0.0.1 at 2011-10-03 16:59:14) [GET]
   [4;36;1mStory Load (0.4ms)[0m   [0;1mSELECT * FROM `stories` [0m
 Rendering start/index
 Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing StartController#index (for 127.0.0.1 at 2011-10-03 17:07:16) [GET]
+  [4;35;1mStory Load (0.4ms)[0m   [0mSELECT * FROM `stories` [0m
+Rendering start/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
